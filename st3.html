@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>st3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+        <style>
+            form{
+                background-color: dodgerblue;
+                text-align: center;
+                padding: 10px;
+                border: 250px solid white
+
+            }
+
+            }
+            body{
+                background-color: lightblue;
+            }
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function displayInfo(){
+        var uname = document.getElementById("fname").value;
+        
+        var numb = document.getElementById("number").value;
+    
+        var ln = document.getElementById("email").value;
+
+        $("body").append(uname, numb, ln);
+]
+
+       
+}
+
+        </script>
+    </head>
+<body>
+    <div class=ddd>
+
+    <form name="myForm" method="post" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Detail Form</legend>
+        <label>Name: <input type="text" id="fname" required></label><br>
+      <br>
+        <label>Mob. No: <input type="tel" id="number" required></label>
+        <br> <br>
+        <label>Email ID: <input type="email" id="email" required></label><br><br>
+        
+        <button class="button" onclick="displayInfo();">Submit</button><br><br>
+        <label>Your input: </label>
+        
+       
+        </fieldset>
+        
+    </form>
+    </div>
+        </body>
+        </html>
